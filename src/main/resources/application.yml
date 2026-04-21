@@ -1,0 +1,29 @@
+spring:
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+  datasource:
+    url: jdbc:h2:file:${user.home}/.dbbackup/batchdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  shell:
+    interactive:
+      enabled: true
+
+dbbackup:
+  profiles:
+    local-pg:
+      db-type: POSTGRES
+      host: localhost
+      port: 5432
+      database: mydb
+      username: postgres
+  storage:
+    local:
+      path: ${user.home}/.dbbackup/backups
+  notifications:
+    slack:
+      webhook-url: ""
