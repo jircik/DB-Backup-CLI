@@ -9,6 +9,9 @@ spring:
       enabled: false
     jdbc:
       initialize-schema: always
+  shell:
+    interactive:
+      enabled: false
 
 dbbackup:
   profiles:
