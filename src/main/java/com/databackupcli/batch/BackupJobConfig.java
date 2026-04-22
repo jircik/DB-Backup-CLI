@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-public class BackupJob {
+public class BackupJobConfig {
 
     // -----------------------------------------------------------------------
     // Steps

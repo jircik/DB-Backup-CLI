@@ -19,8 +19,9 @@ dbbackup:
       db-type: POSTGRES
       host: localhost
       port: 5432
-      database: mydb
-      username: postgres
+      database: dbbackup_test
+      username: dev
+      password:
   storage:
     local:
       path: ${user.home}/.dbbackup/backups
