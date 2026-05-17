@@ -2,6 +2,8 @@
 
 A production-grade database backup tool built with **Java 21**, **Spring Boot 3.3**, **Spring Shell**, and **Spring Batch**. Runs as an interactive command-line application that connects to your databases, dumps them using native tools, compresses the output, and stores backups to local disk (or cloud storage in a future release).
 
+> Check out the project's **landing page** at [**db-backup.jircik.dev**](http://db-backup.jircik.dev).
+
 ---
 
 ## Features
